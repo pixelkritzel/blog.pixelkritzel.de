@@ -1,0 +1,10 @@
+	<article class="post-list-item">
+		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		<div>
+			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
+			{{ .Summary }}
+			{{ if .Truncated }}
+				<a href="{{ .Permalink }}">Read more...</a>
+			{{ end }}
+		</div>
+	</article>

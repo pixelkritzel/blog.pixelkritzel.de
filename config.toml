@@ -1,0 +1,22 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "pixelkritzel"
+theme="pixelkritzel"
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = -110
+  [[menu.main]]
+    name = "Privacy & Imprint"
+    url = "/necessary-shit"
+    weight = -100
+  [[menu.main]]
+    name = "CV"
+    url = "https://www.pixelkritzel.de/index_en.html"
+    weight = -100
+  [[menu.main]]
+    name = "CV (deutsch)"
+    url = "https://www.pixelkritzel.de/index.html"
+    weight = -100
