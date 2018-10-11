@@ -12,3 +12,5 @@ fields:
   name: published
 - type: boolean
   name: draft
+pages:
+- content/posts/test-post.md
