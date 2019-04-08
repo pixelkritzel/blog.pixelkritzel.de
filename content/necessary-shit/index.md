@@ -1,5 +1,5 @@
 ---
-title: "Datenschutz & Impressum"
+title: 'Datenschutz & Impressum'
 ---
 
 ## Impressum

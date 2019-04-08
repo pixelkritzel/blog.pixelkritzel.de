@@ -1,8 +1,12 @@
 {{ partial "header.html" . }}
 	<main>
-		<article>
+		<article class="article">
+			{{ if not .Date.IsZero }}
+				<div class="time-container">
+					<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
+				</div>
+			{{ end }}
 			<h1>{{ .Title }}</h1>
-			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
 			<div>
 				{{ .Content }}
 			</div>
