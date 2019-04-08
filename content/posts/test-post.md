@@ -5,4 +5,4 @@ published = "2018-10-10T22:00:00+00:00"
 title = "Test post"
 
 +++
-This is a test of forestry
+![](/uploads/IMG_1088-.jpg)This is a test of forestry
