@@ -1,5 +1,7 @@
 	</div><!-- Closing of .container -->
-  <script src="{{ .Site.BaseURL }}javascript/main.js"></script>
-	<script src="{{ .Site.BaseURL }}javascript/prism.js"></script>
+	{{ $plugins := resources.Get "js/main.js" }}
+	{{ $global := resources.Get "js/prism.js" }}
+	{{ $js := slice $plugins $global | resources.Concat "js/bundle.js" | resources.Minify  }}
+  <script src="{{ $js.Permalink }}"></script>
 </body>
 </html>

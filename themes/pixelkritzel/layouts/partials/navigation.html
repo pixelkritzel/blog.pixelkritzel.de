@@ -2,7 +2,9 @@
   <button type="button" title="Show navigation" class="button button-clear show-navigation js-show-navigation">Menu</button>
   <ul class="navigation-list js-navigation-list">
     {{ range .Site.Menus.main }}
-    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+    <li>
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    </li>
     {{ end }}
   </ul>
 </nav>
