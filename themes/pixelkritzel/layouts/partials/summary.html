@@ -1,7 +1,7 @@
 	<article class="article post-list-item">
 		{{ if not .Date.IsZero }}
 				<div class="time-container">
-					<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
+					<time>{{ .Date.Format "02.01.2006" }}</time>
 				</div>
 			{{ end }}
 		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
