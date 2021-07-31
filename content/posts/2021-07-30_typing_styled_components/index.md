@@ -13,7 +13,7 @@ const StyledButton = styled.button<{ variant?: 'small' | 'large' }>`
   // styles here
 `
 
-interface ButtonProps extends React.ComponentProps<StyledButton> {
+interface ButtonProps extends React.ComponentProps<tyepof StyledButton> {
   variant?: 'default' | 'small' | 'large'
 }
 
